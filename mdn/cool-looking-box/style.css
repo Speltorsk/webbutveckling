@@ -1,0 +1,28 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+div {
+  background-color: blueviolet;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 200px;
+  padding-right:200px;
+  border-style: solid;
+  border-color: aquamarine;
+  border-width: 2px;
+  display: inline-block;
+  margin-top: 100px;
+  border-radius: 10%;
+  font-size: 20px;
+  text-shadow: 3px 3px 1px black;
+  box-shadow: 10px 10px 100px black,
+  inset 10px 10px 100px black;
+}
+
+body {
+  text-align: center;
+  color: white;
+}

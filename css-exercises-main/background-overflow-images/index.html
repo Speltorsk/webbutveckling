@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercises - Student Version</title>
+    <style>
+        /* ====================================
+           1. POSTCARD CHALLENGE (Backgrounds & Borders)
+           ==================================== */
+        /* 
+        🛠️ TASK: Style the postcard!
+        1. Set a **gradient background** (use `linear-gradient()`).
+        2. Apply a **border** (try `solid`, `dashed`, or `double`).
+        3. Adjust the **border-radius** (sharp or rounded?).
+        4. Add a **box-shadow** to create depth.
+        */
+        .postcard {
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(#e66465, #9198e5); /* TODO: Add a gradient background */;
+            border: solid /* TODO: Add a border */;
+            border-radius: 20px; /* TODO: Set border-radius */;
+            padding: 20px;
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+            box-shadow: 10px 10px 10px; /* TODO: Add a box-shadow */;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ====================================
+           2. HIDDEN MESSAGE (Overflow)
+           ==================================== */
+        /* 
+        🛠️ TASK: Fix the hidden message!
+        1. Set `overflow` to `hidden`, `scroll`, or `auto`—which works best?
+        2. Modify the `height` to control content visibility.
+        3. Later, you will fix the **Show More** button in JavaScript!
+        */
+        .hidden-box {
+            width: 250px;
+            height: 0px;
+            background-color: #ddd;
+            border: 2px solid black;
+            padding: 10px;
+            overflow: hidden; /* TODO: Set overflow */
+            margin-bottom: 20px;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .show-more {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* ====================================
+           3. PROFILE CARD (Images, Media, Forms)
+           ==================================== */
+        /* 
+        🛠️ TASK: Style the profile card!
+        1. Make the profile **image responsive** (hint: `max-width` or `object-fit`).
+        2. Style the **input field** (change borders, padding, colors).
+        3. Add an effect when the **input field is focused** (e.g., glow or shadow).
+        */
+        .profile-card {
+            width: 250px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 150px;
+            object-fit: fill /* TODO: Choose cover, contain, or fill */;
+            border-radius: 50px;/* TODO: Adjust border-radius */;
+        }
+
+        .profile-input {
+            width: 100%;
+            padding: 5px; /* TODO: Add padding */;
+            border: dotted red; /* TODO: Choose a border */;
+            border-radius: /* TODO: Adjust border-radius */;
+            margin-top: 10px;
+        }
+
+        .profile-input:focus {
+            border-color: blueviolet;/* TODO: Change focus color */;
+            outline: none;
+            box-shadow: 10px 10px 10px;/* TODO: Add focus effect */;
+        }
+
+        /* ====================================
+           4. FIX THE BROKEN STYLES 
+           ==================================== */
+        /* 
+        🛠️ TASK: Fix this broken box!
+        1. Add `padding` so text doesn't touch the border.
+        2. Ensure text **wraps** inside the box instead of overflowing.
+        3. Change the **border color** to show it's fixed.
+        */
+        .broken {
+            width: 300px;
+            height: 50px;
+            background: #f0f0f0;
+            border: 3px solid red; /* TODO: Change border color */
+            padding: 10px; /* TODO: Add padding */;
+            overflow: scroll /* TODO: Fix overflow */;
+            white-space: wrap; /* TODO: Fix text wrapping issue */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. POSTCARD CHALLENGE -->
+    <div class="postcard">
+        <h3>Greetings from CSS Land! 🌅</h3>
+        <p>Style this postcard with borders, gradients, and shadows.</p>
+    </div>
+
+    <!-- 2. HIDDEN MESSAGE -->
+    <div class="hidden-box" id="hiddenText">
+        This is a secret message. Adjust the overflow to control how much is visible! Stopping By Woods On A Snowy EveningWhose woods these are I think I know.
+        His house is in the village, though;
+        He will not see me stopping here
+        To watch his woods fill up with snow.
+    </div>
+    <p class="show-more" onclick="toggleMessage()">Show More / Less</p>
+
+    <!-- 3. PROFILE CARD -->
+    <div class="profile-card">
+        <img src="https://picsum.photos/300/200" alt="Profile Picture" class="profile-img">
+        <h3>Jane Doe</h3>
+        <input type="text" placeholder="Enter your username" class="profile-input">
+    </div>
+
+    <!-- 4. FIX THE BROKEN STYLES -->
+    <div class="broken">
+        This text should overflow the box and require scrolling! Fix it by changing `overflow` and `white-space`.
+    </div>
+
+    <script>
+        /* ====================================
+           🛠️ TASK: Fix the Show More button!
+           ==================================== */
+        /* 
+        🚨 NO CODE INCLUDED - STUDENTS MUST WRITE THIS!
+        
+        1. When the button is clicked, it should expand the text box.
+        2. When clicked again, it should collapse back.
+        3. Modify the JavaScript below to achieve this effect.
+        */
+        
+        function toggleMessage() {
+            // TODO: Write the function that expands/collapses the text
+        }
+    </script>
+
+</body>
+</html>
