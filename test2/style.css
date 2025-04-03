@@ -1,0 +1,42 @@
+/* Grundläggande styling för alla boxar */
+.container {
+
+    overflow: auto;
+    height: 1000vh; /* Ensure the container has a defined height */
+    position: relative;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px solid black;
+    text-align: center;
+    display: block; /* Ensure that boxes are block-level elements */
+}
+
+/* Kasper - Position: sticky; Textstyling: overline, oblique */
+.box1 {
+    position: sticky; 
+    top: 0; 
+    left:0;
+    font-style: oblique;
+    text-decoration: overline;
+}
+
+.box3 {
+    position: sticky; 
+    top: 50px; /* Adjust this value to avoid overlapping */    
+    left: 300px;
+    font-style: oblique;
+    text-decoration: overline;
+}
+
+.box5 {
+    position: sticky; 
+    top: 100px; /* Adjust this value to avoid overlapping */
+    font-style: oblique;
+    text-decoration: overline;
+}
