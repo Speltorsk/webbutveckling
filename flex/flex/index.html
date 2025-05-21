@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Hero Image</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Header with menu and hero image -->
+  <header class="header">
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Hero section with responsive image. The images are provided in various sizes to save bandwidth -->
+    <div class="hero">
+      <img 
+        src="images/hero-large-1280x720.jpg" 
+        srcset="images/hero-small-1280x720.jpg 480w, images/hero-medium-1280x720.jpg 768w, images/hero-large-1280x720.jpg 1200w" 
+        sizes="(max-width: 768px) 100vw, 1200px" 
+        alt="Hero Image">
+    </div>
+  </header>
+
+  <!-- Main layout with left sidebar, main content, and right sidebar -->
+  <div class="container">
+    <aside class="sidebar left">
+      <h2>Left Information</h2>
+      <p>
+        Here is some placeholder information. You can add contact details, promotional messages, or any other content.
+      </p>
+    </aside>
+
+    <main class="main">
+      <article class="article">
+        <h1>How to Use Flexbox</h1>
+        <p>
+          Flexbox is a powerful CSS layout model that makes it easier to design flexible and responsive layouts. To use flexbox, you first set 
+          <code>display: flex</code> on the parent container. This turns its children into flex items. The main axis runs in the direction specified by 
+          <code>flex-direction</code> (by default, row), and the cross axis runs perpendicular to it.
+        </p>
+        <p>
+          Common flexbox container properties include <code>justify-content</code> (which aligns items along the main axis), 
+          <code>align-items</code> (which aligns items along the cross axis), and <code>flex-wrap</code> (which controls whether items wrap onto new lines).
+        </p>
+        <p>
+          For individual flex items, properties like <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> allow you to control 
+          how the items grow or shrink relative to their siblings. In many cases, setting <code>flex: 1</code> on all items creates equal distribution.
+        </p>
+      </article>
+    </main>
+
+    <aside class="sidebar right">
+      <h2>Right Information</h2>
+      <p>
+        Here you can display additional placeholder information, such as news, links, or promotional content.
+      </p>
+      <!-- Example images in the right sidebar – responsive image attributes are used here as well -->
+      <ul class="sidebar-images">
+        <li>
+          <img 
+            src="images/test-large-1536x1024.png" 
+            srcset="images/test-small-1536x1024.png 480w, images/test-medium-1536x1024.png 768w, images/test-large-1536x1024.png 1200w" 
+            sizes="(max-width: 768px) 100vw, 400px" 
+            alt="Test Image">
+        </li>
+        <li>
+          <img 
+            src="images/test2-large-1536x1024.png" 
+            srcset="images/test2-small-1536x1024.png 480w, images/test2-medium-1536x1024.png 768w, images/test2-large-1536x1024.png 1200w" 
+            sizes="(max-width: 768px) 100vw, 400px" 
+            alt="Test Image">
+        </li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Footer with additional placeholder information -->
+  <footer class="footer">
+    <p>
+      © 2025 Example Company. All rights reserved. You can add more details here, such as links, contact info, or copyright information.
+    </p>
+  </footer>
+</body>
+</html>
