@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -199,7 +201,7 @@ body {
 
 .scroll-banner {
     position: relative;
-    top: 10vh;
+    top: -40vh;
     height: 10.5vw;
     width: 100vw;
     display: flex;
@@ -264,13 +266,15 @@ body {
   }
 
 .main-video-div{
-    position: absolute;
+    position: relative;
+    top: -25vh;
     
 }
 
 .main-video{
     position: relative; 
-    align-items: center;
-    width: 130vw;
+    justify-content: center;
+    
+    width: 100vw;
     
 }
