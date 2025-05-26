@@ -16,23 +16,22 @@ body {
     align-items: center;
     justify-content: flex-start;
     background-color: #333;
-    padding: 1rem 2rem;
+    padding: 5vh 5vw;
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 5vh;
+    height: 0vh;
 }
 
 .navbar .logo img {
-    height: 50px;
-    width: auto;
-    margin-right: 2rem; 
+    height: 6vh;
+    margin-right: 2vw; 
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1vw;
     list-style: none;
     position: relative;
 }
@@ -44,8 +43,8 @@ body {
 .fancy-button {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+    font-size: 2vh;
+    padding: 0.1vh 1vw;
     border: 2px solid transparent;
     border-radius: 5px;
     position: relative;
@@ -84,15 +83,15 @@ body {
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 140%;
+    top: 110%;
     left: 0;
     background-color: #444;
-    border-radius: 5px;
+    border-radius: 1vw;
     list-style: none;
     padding: 0.5rem 0;
     margin: 0;
     min-width: 150px;
-    z-index: 1000;
+    z-index: 1001;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -210,6 +209,17 @@ body {
     text-wrap-mode:nowrap;
 }
 
+.scroll-banner-2 {
+    position: relative;
+    top: 100px;
+    height: 10.5vw;
+    width: 100vw;
+    display: flex;
+    background-color: purple;
+    overflow:hidden;
+    text-wrap-mode:nowrap;
+}
+
 .scroll-banner-gallery {
     position: absolute;
     animation: scroll;
@@ -274,6 +284,7 @@ body {
 .main-video{
     position: relative; 
     justify-content: center;
+    
     
     width: 100vw;
     
