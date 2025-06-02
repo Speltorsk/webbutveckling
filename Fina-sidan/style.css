@@ -200,13 +200,11 @@ body {
 
 .scroll-banner {
     position: relative;
-    top: -40vh;
+    top: -25%;
     height: 10.5vw;
     width: 100vw;
-    display: flex;
     background-color: purple;
     overflow:hidden;
-    text-wrap-mode:nowrap;
 }
 
 .scroll-banner-2 {
@@ -275,17 +273,10 @@ body {
     }
   }
 
-.main-video-div{
-    position: relative;
-    top: -25vh;
-    
+.main-area{
+    height: 100%;
 }
 
-.main-video{
-    position: relative; 
-    justify-content: center;
-    
-    
-    width: 100vw;
+.main-video {
     
 }
