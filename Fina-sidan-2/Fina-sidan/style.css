@@ -215,7 +215,7 @@ header{
     display: flex;
     background-color: black;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .scroll-item {
@@ -280,11 +280,14 @@ header{
     width: 100vw;
     position: relative;
     top: -10rem;
+    justify-content: center;
+    overflow-x: clip;
+    z-index: 101;
 }
 .teamscs2{
     z-index: 100;
     background-color: white;
-    top: 35rem;
+    top: 20vw;
     position: relative;
     padding: 10rem;
     display: flex;
@@ -356,6 +359,19 @@ header{
     height: 30rem;
     width: 100vw;
     z-index: -1000;
+}
+
+@media only screen and (min-width: 800px) {
+  .cs2Banner {
+    width: 100vw;
+    
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cs2Banner {
+    width: 80rem;
+    
+  }
 }
 
 
